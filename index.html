@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Raj's Portfolio Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Raj's Physics Quiz 🎓</h1>
+  </header>
+
+  <section class="contest">
+    <div class="column">
+      <h2>🏆 Winners</h2>
+      <ul id="winnerList">
+        <li>Jo jita hai</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h2>😅 Losers</h2>
+      <ul id="loserList">
+        <li>Jo haar gaya hai</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="quiz" id="quizSection">
+    <p>Question: What is the speed of light in vacuum?</p>
+    <input type="text" id="answer" placeholder="Enter your answer (m/s)">
+    <button onclick="checkAnswer()">Submit</button>
+  </section>
+
+  <section id="result"></section>
+
+  <canvas id="stars"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
