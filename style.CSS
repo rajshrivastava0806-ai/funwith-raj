@@ -1,5 +1,4 @@
-
- body {
+body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #1e3c72, #2a5298);
   color: white;
@@ -32,7 +31,7 @@ button:hover {
 }
 
 #result {
-  font-size: 32px;
+  font-size: 28px;
   margin: 20px;
   font-weight: bold;
 }
@@ -41,6 +40,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .column {
@@ -48,8 +48,26 @@ button:hover {
   padding: 20px;
   border-radius: 10px;
   width: 40%;
+  margin: 10px;
 }
 
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .contest {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column {
+    width: 80%;
+  }
+  #result {
+    font-size: 22px;
+  }
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
 canvas {
   position: fixed;
   top: 0;
@@ -58,3 +76,5 @@ canvas {
   height: 100%;
   pointer-events: none;
 }
+
+ 
